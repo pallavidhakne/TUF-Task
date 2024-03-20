@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f7f7f7; /* Softer background for overall design */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height to center form vertically */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+form label {
+  font-size: 0.95rem;
+  font-weight: 500; /* Slightly bolder label for better emphasis */
+  color: #333; /* Darker text for better contrast */
+  margin-bottom: 0.25rem;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ced4da; /* Softer border color */
+  border-radius: 4px; /* Slightly rounded borders for input fields */
+  font-size: 0.9rem;
+}
+
+form textarea {
+  height: 120px; /* Larger height for source code input */
+}
+
+/* Style for submit button */
+form button {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #005555; /* Your primary color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem; /* Extra space before the submit button */
+}
+
+form button:hover {
+  background-color: #003d3d; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 1rem;
+  }
+
+  form button {
+    padding: 0.5rem 1rem;
+  }
+}
